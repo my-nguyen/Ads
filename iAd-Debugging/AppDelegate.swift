@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import iAd
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ADBannerViewDelegate {
 
     var window: UIWindow?
-
+    var bannerView: ADBannerView!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        bannerView = ADBannerView(adType: .Banner)
+        // the translatesAutoresizingMaskIntoConstraints property is to facilitate setting Auto Layout constraints
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        // set the view controller as the delegate of the banner view so it will receive
+        // its load and fail messages
+        bannerView.delegate = self
+        bannerView.hidden = true
+
         return true
     }
 

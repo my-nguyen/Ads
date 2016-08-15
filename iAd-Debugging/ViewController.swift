@@ -10,20 +10,14 @@ import UIKit
 import iAd
 
 // this class conforms to ADBannerViewDelegate in order to set bannerView.delegate to the view controller
-class ViewController: UIViewController, ADBannerViewDelegate {
-
+class ViewController: UIViewController {
     var bannerView: ADBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView = ADBannerView(adType: .Banner)
-        // the translatesAutoresizingMaskIntoConstraints property is to facilitate setting Auto Layout constraints
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        // set the view controller as the delegate of the banner view so it will receive
-        // its load and fail messages
-        bannerView.delegate = self
-        bannerView.hidden = true
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        bannerView = appDelegate.bannerView
         view.addSubview(bannerView)
 
         let viewsDictionary = ["bannerView": bannerView]
@@ -38,14 +32,16 @@ class ViewController: UIViewController, ADBannerViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    // this method is triggered when an ad is received
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        bannerView.hidden = false
+    override func viewWillAppear(animated: Bool) {
+        if bannerView != nil {
+            bannerView.hidden = true
+        }
     }
 
-    // this method is triggered when something went wrong
-    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        bannerView.hidden = true
+    override func viewWillDisappear(animated: Bool) {
+        if bannerView != nil {
+            bannerView.hidden = false
+        }
     }
 }
 
