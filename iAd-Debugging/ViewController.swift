@@ -11,6 +11,7 @@ import iAd
 
 // this class conforms to ADBannerViewDelegate in order to set bannerView.delegate to the view controller
 class ViewController: UIViewController {
+
     var bannerView: ADBannerView!
 
     override func viewDidLoad() {

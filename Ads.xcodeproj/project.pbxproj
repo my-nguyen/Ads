@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FE9740E1D617C86004EF060 /* iAd-Debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iAd-Debugging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE9740E1D617C86004EF060 /* Ads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE974111D617C86004EF060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE974131D617C86004EF060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FE974161D617C86004EF060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		0FE974051D617C86004EF060 = {
 			isa = PBXGroup;
 			children = (
-				0FE974101D617C86004EF060 /* iAd-Debugging */,
+				0FE974101D617C86004EF060 /* iAd */,
 				0FE9740F1D617C86004EF060 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		0FE9740F1D617C86004EF060 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0FE9740E1D617C86004EF060 /* iAd-Debugging.app */,
+				0FE9740E1D617C86004EF060 /* Ads.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0FE974101D617C86004EF060 /* iAd-Debugging */ = {
+		0FE974101D617C86004EF060 /* iAd */ = {
 			isa = PBXGroup;
 			children = (
 				0FE974111D617C86004EF060 /* AppDelegate.swift */,
@@ -61,15 +61,16 @@
 				0FE9741A1D617C86004EF060 /* LaunchScreen.storyboard */,
 				0FE9741D1D617C86004EF060 /* Info.plist */,
 			);
+			name = iAd;
 			path = "iAd-Debugging";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0FE9740D1D617C86004EF060 /* iAd-Debugging */ = {
+		0FE9740D1D617C86004EF060 /* Ads */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0FE974201D617C86004EF060 /* Build configuration list for PBXNativeTarget "iAd-Debugging" */;
+			buildConfigurationList = 0FE974201D617C86004EF060 /* Build configuration list for PBXNativeTarget "Ads" */;
 			buildPhases = (
 				0FE9740A1D617C86004EF060 /* Sources */,
 				0FE9740B1D617C86004EF060 /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "iAd-Debugging";
+			name = Ads;
 			productName = "iAd-Debugging";
-			productReference = 0FE9740E1D617C86004EF060 /* iAd-Debugging.app */;
+			productReference = 0FE9740E1D617C86004EF060 /* Ads.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0FE974091D617C86004EF060 /* Build configuration list for PBXProject "iAd-Debugging" */;
+			buildConfigurationList = 0FE974091D617C86004EF060 /* Build configuration list for PBXProject "Ads" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0FE9740D1D617C86004EF060 /* iAd-Debugging */,
+				0FE9740D1D617C86004EF060 /* Ads */,
 			);
 		};
 /* End PBXProject section */
@@ -253,8 +254,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iAd-Debugging/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nguyen.iAd-Debugging";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyen.Ads;
+				PRODUCT_NAME = Ads;
 			};
 			name = Debug;
 		};
@@ -264,15 +265,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iAd-Debugging/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nguyen.iAd-Debugging";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyen.Ads;
+				PRODUCT_NAME = Ads;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0FE974091D617C86004EF060 /* Build configuration list for PBXProject "iAd-Debugging" */ = {
+		0FE974091D617C86004EF060 /* Build configuration list for PBXProject "Ads" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0FE9741E1D617C86004EF060 /* Debug */,
@@ -281,13 +282,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0FE974201D617C86004EF060 /* Build configuration list for PBXNativeTarget "iAd-Debugging" */ = {
+		0FE974201D617C86004EF060 /* Build configuration list for PBXNativeTarget "Ads" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0FE974211D617C86004EF060 /* Debug */,
 				0FE974221D617C86004EF060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
